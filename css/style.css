@@ -1,0 +1,326 @@
+*{
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    text-decoration: none;
+    box-sizing: border-box;
+
+}
+
+body{
+    background-color: black;
+
+}
+
+header{
+    border-bottom: 1px solid orangered;
+    margin-bottom: 2rem;
+
+
+}
+
+header div{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+
+header h1{
+    color: white;
+    font-size: 1.6rem;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.menu{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 3rem;
+
+
+}
+
+header nav ul li{
+    color: white;
+    font-size: 0.7rem;
+    font-family: 'Cormorant SC', serif;
+    text-transform: uppercase;
+    display: inline-block;
+    margin: 0.3rem;
+}
+
+header nav ul li a{
+    text-decoration: none;
+    color: orangered;
+    padding: 0.4rem;
+}
+
+header nav ul li a:hover{
+    background-color: white;
+
+}
+
+.presentacion{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+
+main div p{
+    text-align: center;
+    color: white;
+    font-size: 0.9rem;
+    align-items: center;
+    text-transform: uppercase;
+    font-family:'Cormorant SC', serif;
+    margin: 1.3rem;
+}
+
+
+.imgborder{
+    border: 2px solid white;
+    width: 25rem;
+    height: auto;
+    margin: 2rem;
+}
+
+section{
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+    border-bottom: 1px solid orangered;
+    margin-bottom: 2rem;
+    /*box-shadow: 5px 0 10px rgb(235, 230, 230);*/
+}
+
+.atencion{
+    margin-bottom: 2rem;
+}
+
+.horarios{
+    color: orangered;
+    font-size: 1rem;
+    text-align: center;
+    font-family: 'Cormorant SC', serif;
+    margin: 1.5rem 0rem;
+}
+
+.dias{
+    color: orangered;
+    font-size: 0.9rem;
+    text-align: center;
+    font-family: 'Cormorant SC', serif;
+}
+
+.contacto{
+    margin-top: 3rem;
+    color: whitesmoke;
+    font-size: 1.4rem;
+    font-family: Arial, Helvetica, sans-serif;
+
+}
+
+
+.sectionproductos{
+    display: flexbox;
+
+}
+
+.titulo{
+    background-color: orangered;
+    color: black;
+    font-size: 1.2rem;
+    text-align: center;
+    font-family: 'Cormorant SC', serif;
+    margin: 1.5rem;
+    padding: 0.5rem;
+
+
+}
+
+.tituloproducto{
+    color: orangered;
+    font-size: 1.2rem;
+    text-align: center;
+    font-family: 'Cormorant SC', serif;
+    margin-bottom: 1rem;
+
+}
+
+.productos{
+    color: white;
+    font-size: 1.1rem;
+    text-align: center;
+    font-family: 'Cormorant SC', serif;
+}
+
+footer{    
+    height: 80vh;
+    display: grid;
+    grid-template-columns: auto;
+    grid-template-areas: 
+    "contacto contacto"
+    "redes redes"   
+    "direccion direccion"
+    "dunamis dunamis"    ;
+    justify-content: center;
+    align-items: center;
+    justify-items:center;
+}
+
+.redes{
+    grid-area: redes;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+}
+.contacto{
+    grid-area: contacto;
+}
+
+.direccion{
+    grid-area: direccion;
+    margin-top: 7rem;
+}
+
+.dunamis{
+    grid-area: dunamis;
+}
+
+
+footer h3{
+    color: rgb(215, 89, 43);
+    font-size: 1rem;
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+    margin-bottom: 3rem;
+}
+
+.img-footer{
+    display:none;
+}
+
+
+.video{
+    display: flex;
+    justify-content: center;
+    
+}
+.video-tablet{
+    display: none;
+}
+
+.video-compu{
+    display: none;
+}
+
+@media screen and (min-width:600px){
+
+    header h1{
+        font-size: 2rem;
+    }
+
+    header nav ul li{
+        font-size: 0.9rem;
+    }
+
+    main div p{
+        font-size: 1rem;
+    }
+
+    .imgborder{
+        width: 35rem;
+        height: auto;
+        margin: 2rem;
+    }
+
+    .video-celu{
+        display: none;
+    }
+
+    .video-tablet{
+        display: flex;
+        justify-content: center;  
+    }
+
+    .video-compu{
+        display: none;
+    }
+    
+
+}
+
+@media screen and (min-width:1080px){
+
+    header{
+        display:flex;
+        justify-content: space-around;
+        align-items: stretch;
+        padding: 1rem;
+        margin-bottom: 2rem;
+    }
+
+    header h1{
+        font-size: 2rem;
+    }
+
+    .menu{
+        margin-top: 2rem;
+    }
+
+    header nav ul li{
+        font-size: 1rem;
+    }
+
+    
+    main div p{
+        font-size: 1.1rem;
+    }
+
+    .imgborder{
+        width: 40rem;
+        height: auto;
+        margin: 2rem;
+    }
+
+    .presentacion{
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+
+    }
+
+    .contacto{
+        font-size: 1.6rem;
+    }
+
+    .img-footer{
+        display: flex;
+    }
+
+    section{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        margin-top: 5rem;
+        padding: 1rem;
+    }
+
+
+    .video-celu{
+        display: none;
+    }
+    
+    .video-tablet{
+        display: none;
+    }
+
+    .video-compu{
+        display: flex;
+        justify-content: center;  
+    }
+
+}
